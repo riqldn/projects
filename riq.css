@@ -1,0 +1,389 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-attachment: fixed;
+    background-image: url('small/watercolor-paper-texture_1194-5416.jpg');
+    /*background:linear-gradient(45deg, rgb(20, 20, 20), black)*/
+    ;
+    animation-name:siteanimation ;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+}
+option{
+    color:skyblue;
+    font-family: riqsfont;
+}
+
+select{
+    font-family: riqsfont;
+}
+@keyframes siteanimation{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes logoanimation{
+    0%{
+        transform: scale(2);
+    }
+    25%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1.25);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 200px;
+    background: rgba(255, 255, 255,.5);
+    border-radius: 10px;
+
+}
+#photography-head{
+    margin: 0 auto; 
+    margin-bottom: 180px; 
+    clear: both; 
+    text-align: center; 
+    display: block;
+}
+.nav-buttons{
+    flex: 0 0 50%;
+    margin-top: 10px;
+    text-align: right;
+    display:inline-block;
+    padding-right: 20px;
+}
+textarea{
+    border: white 2px solid;
+}
+@font-face{
+    font-family: riqsfont;
+    src: url('fonts/LearntoFly-Regular.otf');
+}
+.nav-buttons a{
+    display: inline-block;
+    margin: 20px 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: riqsfont;
+    font-weight: 800;
+    font-size: 20px;
+}
+#logo:hover{
+    opacity: .7;
+    transform: scale(1.4);
+}
+a:hover{
+    color: skyblue;
+    transform: scale(1.2);
+}
+h1{
+    font-family: riqsfont;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0,.25);
+}
+
+.logo{
+    display: flex;
+    flex: 0 0 50%;
+   
+    justify-content:flex-end;
+    align-content: center;
+
+}
+#logo{
+   align-self: center;
+   height: auto;
+   width: 13%;
+   animation: logoanimation;
+   animation-timing-function: linear;
+   animation-duration: 1s;
+}
+.photography
+{
+    
+    
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+.illustrations{
+
+     margin-top: 100px;
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.art{
+    display: flex;
+    padding: 20px;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.logos-contain{
+    display: flex;
+    padding: 20px;
+    margin-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logos{
+    margin-top: 100px;
+}
+#logo-head{
+    margin-bottom: 80px;
+}
+#imge:hover{
+    transform: scale(1.05);
+    opacity: .95;
+}
+#imge{
+    height: auto;
+    width: 47.5%;
+    margin: 10px;
+    flex: 0 0 48%;
+
+    border-radius: 30px;
+    transition-property: transform, opacity;
+    transition-delay: 0.35s;
+    transition-timing-function: linear;
+    transition-duration: 1s;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+form{
+    flex: 0 0 100%;
+    display: flex;
+    padding: 20px;
+    width: auto;
+}
+input[type = "submit"]{
+    display: block;
+    background-color: white;
+    font-family: riqsfont;
+}
+input[type = "submit"]:hover{
+    
+    background-color: skyblue;
+    
+}
+
+input:focus{
+    border: 3px solid skyblue;
+    outline: none;
+    transform: scale(2);
+}
+input:hover{
+    border: 3px solid skyblue;
+}
+.fa-instagram{
+    font-size: 35px;
+    color: white;
+    margin: 0 auto;
+    text-shadow: 0 0 4px black;
+    
+}
+
+.fa-instagram:hover{
+    color: skyblue;
+    text-shadow: 0 0 0 white;
+}
+#insta{
+    margin: 0 auto;
+}
+label,input,select,form{
+    display: block;
+    margin: 0 auto;
+  
+    
+    
+}
+input{
+    margin-left: 0;
+    border-radius: 30px;
+    border: 2px white solid;
+    margin-bottom: 30px;
+    
+}
+select{
+    margin-left: 0;
+}
+label{
+    color: rgb(0, 0, 0);
+    font-family: riqsfont;
+}
+.image{
+    display: flex;
+    padding: 20px;
+  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width:426px){
+    *{
+        box-sizing: border-box;
+    
+    }
+    
+       
+      #photography-head{
+          margin-bottom: 50px;
+      }
+        
+        
+    
+        .nav-buttons{
+            display: none;
+        }
+    
+    .nav{
+        display: flex;
+        margin-bottom: 25px;
+        height: 50px;
+        
+    }
+    #imge{
+        height: auto;
+        width: 47.5%;
+        margin: 10px;
+        flex: 0 0 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #img{
+        height: auto;
+        width: 19%;
+     
+    }
+    .logo{
+        flex: 1 0 100%;
+        justify-content: center;
+    }
+    
+    .photography
+    {
+        display: flex;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    input:focus{
+        border: 3px solid skyblue;
+        outline: none;
+        transform: scale(1.2);
+    }
+    
+    }
+    @media (min-width: 768px) and (max-width: 979px){
+    *{
+        box-sizing: border-box;
+    
+    }
+    
+       
+      #photography-head{
+          margin-bottom: 50px;
+      }
+        
+        
+    
+        .nav-buttons{
+            display: none;
+        }
+    
+    .nav{
+        display: flex;
+        margin-bottom: 25px;
+        height: 50px;
+        
+    }
+    #imge{
+        height: auto;
+        width: 47.5%;
+        margin: 10px;
+        flex: 0 0 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #img{
+        height: auto;
+        width: 19%;
+     
+    }
+    .logo{
+        flex: 1 0 100%;
+        justify-content: center;
+    }
+    
+    .photography
+    {
+        display: flex;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    input:focus{
+        border: 3px solid skyblue;
+        outline: none;
+        transform: scale(1.2);
+    }
+    #photography-head{
+        font-size: 40px;
+    }
+    .nav{
+        height: 150px;
+        margin-bottom: 90px;
+    }
+    #ill-head{
+        font-size: 40px;
+    }
+    #logo-head{
+        font-size: 40px;
+    }
+    label{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
